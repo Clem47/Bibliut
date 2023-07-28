@@ -1,0 +1,24 @@
+nelmio_api_doc:
+    models:
+        names:
+            - { alias: UserInfos, type: App\Entity\User, groups: [basic] }
+            - { alias: BookInfos, type: App\Entity\Book, groups: [basic] }
+            - { alias: LanguageInfo, type: App\Entity\Language, groups: [basic] }
+            - { alias: EditorInfo, type: App\Entity\Editor, groups: [basic] }
+            - { alias: CategoryInfo, type: App\Entity\Category, groups: [basic] }
+            - { alias: AuthorInfo, type: App\Entity\Author, groups: [basic] }
+            
+    documentation:
+        info:
+            title: Bibliut
+            description: API de la bibliothèque de l'iut de Bordeaux
+            version: 1.0.0
+        components:
+            securitySchemes:
+                Bearer:
+                    type: http
+                    scheme: bearer
+
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/api(?!/doc$) # Accepts routes under /api except /api/doc

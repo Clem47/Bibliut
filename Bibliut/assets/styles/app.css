@@ -1,0 +1,66 @@
+.header {
+    color: black;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+body {
+    caret-color: transparent;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    color: rgb(67, 155, 238);
+}
+.header .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.header h2{
+    display: flex;
+    justify-content: center;
+}
+
+.header li{
+    margin: 0 1vw;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover{
+    color: rgb(67, 155, 238);
+}
+
+.ui.input {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    caret-color: auto;
+}
+
+.resize{
+    background-image: url(../img/bibli.jpg);
+}
